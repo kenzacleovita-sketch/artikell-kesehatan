@@ -1,0 +1,72 @@
+/* Mengatur tampilan seluruh halaman */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #red;
+    color: #800000;
+    line-height: 1.8;
+}
+
+/* Kotak utama artikel */
+.article {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul artikel */
+.article h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #f00;
+    font-size: 32px;
+}
+
+/* Paragraf artikel */
+.article p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+/* Paragraf pertama */
+.article p:first-of-type {
+    border-left: 5px solid #800000;
+    padding-left: 15px;
+}
+
+/* Efek ketika artikel diarahkan mouse */
+.article:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+/* Tampilan untuk layar HP */
+@media (max-width: 600px) {
+    .article {
+        width: 85%;
+        padding: 25px;
+        margin: 25px auto;
+    }
+
+    .article h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .article p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    . article gambar {
+        width: 300px;
+        float: left;
+        margin-right: 10px;
+    }
